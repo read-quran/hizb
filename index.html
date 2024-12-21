@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إدارة الأحزاب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>إدارة حفظ الأحزاب</h1>
+        <div class="controls">
+            <label>من حزب:</label>
+            <input type="number" id="from" min="1" max="60" placeholder="1">
+            
+            <label>إلى حزب:</label>
+            <input type="number" id="to" min="1" max="60" placeholder="60">
+            
+            <label>اليوم الأول:</label>
+            <select id="first-day">
+                <option value="الأحد">الأحد</option>
+                <option value="الاثنين">الاثنين</option>
+                <option value="الثلاثاء">الثلاثاء</option>
+                <option value="الأربعاء">الأربعاء</option>
+                <option value="الخميس">الخميس</option>
+                <option value="الجمعة">الجمعة</option>
+                <option value="السبت">السبت</option>
+                 </select>
+            <button id="generate">توليد الأحزاب</button>
+        </div>
+        <div id="parties-list">
+            <!-- سيتم توليد الأحزاب هنا -->
+        </div>
+        <button id="reset" class="reset">تهيئة الصفحة</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
